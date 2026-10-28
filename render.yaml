@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: verztec
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: BRAND_THEME
+        value: verztec
+      - key: DEMO_SYSTEM_NAME
+        value: standard
+
+  - type: web
+    name: verztec-torean
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: BRAND_THEME
+        value: verztec
+      - key: DEMO_SYSTEM_NAME
+        value: azay-torean
